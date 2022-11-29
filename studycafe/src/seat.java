@@ -22,8 +22,8 @@ public class seat extends JFrame {
 		c.setBackground(back);		
 		c.setLayout(null);
 		
-		//버튼 객체 생성
 		JButton[] seat = new JButton[60];
+		
 		JButton admin = new JButton("관리");
 		admin.setBounds(1200, 650, 70, 30);
 		admin.setBackground(but);
@@ -51,9 +51,6 @@ public class seat extends JFrame {
 				}
 			});
 			*/
-			//seat[i].setLocation(50*(i+1),50*(i+1));
-			//c.add(seat[i]);
-			//setVisible(true);
 		}
 		
 		/*
@@ -67,14 +64,6 @@ public class seat extends JFrame {
 		
 		seat[0].setLocation(125,100);
 		c.add(seat[0]);
-		seat[0].addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e) {	
-				LonginPanel login = new LonginPanel();
-				c.add(login);
-				login.setVisible(false);
-			}
-		});
 		seat[1].setLocation(205,100);
 		c.add(seat[1]);
 		seat[2].setLocation(285,100);
